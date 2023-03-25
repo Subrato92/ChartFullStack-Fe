@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import ChartSection from './components/ChartSection';
+import SelectorSection from './components/SelectorSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container">
+      <div class="row justify-content-md-center g-5 m-4">
+        <div class="col-12">
+          <SelectorSection/>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center g-3 p-2">
+        <div class="col">
+          <ChartSection/>
+        </div>
+      </div>
     </div>
   );
 }
